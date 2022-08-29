@@ -73,7 +73,7 @@ POSSIBILITY OF SUCH DAMAGE.
                 http://www.apache.org/licenses/
 
         applies to:
-	      - Cython, Copyright (c) Cython
+        - Cython, Copyright (c) Cython
         - HuggingFace Transformers, Copyright (c) 2018 - , The Hugging Face Team. All rights reserved.
 -----------------------------------------------------------------------------
 
