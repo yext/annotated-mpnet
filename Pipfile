@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+annotated-mpnet = {editable = true, path = "."}
+torch = "==1.11.0"
+transformers = "==4.20.0"
+numpy = "*"
+tensorboard = "==2.10.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

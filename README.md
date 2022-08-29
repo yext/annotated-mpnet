@@ -8,12 +8,14 @@ With `annotated-mpnet`, we are looking to bring the MPNet pretraining code under
 Additionally, we have gone through the painstaking effort of carefully annotating and commenting on each portion of the model code so that general understanding of the model is more easily conveyed. It is our hope that using this codebase, others will be able to pretrain MPNet using their own data.
 
 ## Installation
-This should be installed in editable mode currently, but plans for a PyPI package in the future are under way.
+This should be installed in editable mode currently, but plans for a PyPI package in the future are under way. We use `pipenv` to do dependency management, which will make your life much easier! All package dependencies are managed by Pipenv and will also create a virtual environment for you so that you won't have to worry about overwriting packages on your local machine.
 
 ```bash
 git clone https://github.com/yext/annotated-mpnet.git
 cd annotated-mpnet
-pip3 install -e .
+pipenv install
+# Call pipenv shell to open the venv with all the installed packages!
+pipenv shell
 ```
 
 ## Pretraining MPNet
