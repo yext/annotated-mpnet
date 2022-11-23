@@ -108,7 +108,7 @@ def convert_mpnet_checkpoint_to_pytorch(
     model.lm_head.decoder.bias.data = mpnet_weight["lm_head.bias"].type_as(tensor)
 
     # Match up the relative attention bias weights with each other
-    model.mpnet.encoder.relative_attention_bias.data = mpnet_weight[
+    model.mpnet.encoder.relative_attention_bias.weight.data = mpnet_weight[
         "sentence_encoder.relative_attention_bias.weight"
     ].type_as(tensor)
 
